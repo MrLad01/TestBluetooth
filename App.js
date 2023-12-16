@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, PermissionsAndroid } from 'react-native';
+import { StyleSheet, Text, View, Button, PermissionsAndroid } from 'react-native';
 
 
 
@@ -32,7 +32,9 @@ requestLocationPermission();
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Omo testing this shit mad!</Text>
+      <Text>Omo testing this shit mad! lemme check it out </Text>
+      <Button title="Connect to Bluetooth" />
+      <Button title="Vibrate Device"  />
       <StatusBar style="auto" />
     </View>
   );
@@ -44,5 +46,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    gap: 10
   },
 });
